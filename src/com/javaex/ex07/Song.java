@@ -8,6 +8,7 @@ public class Song {
 	private String composer;
 	private int year;
 	private int track;
+	
 	//생성자
 	
 	//메소드
@@ -15,7 +16,7 @@ public class Song {
 		this.title = title;
 	}
 	public String getTitle() {
-		return this.title = title;
+		return this.title;
 	}
 	public void setArtist(String artist) {
 		this.artist = artist;
