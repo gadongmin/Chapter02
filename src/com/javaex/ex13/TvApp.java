@@ -24,6 +24,7 @@ public class TvApp {
 		tv.setPower(false);
 		tv.status();
 
+
 	}
 
 }

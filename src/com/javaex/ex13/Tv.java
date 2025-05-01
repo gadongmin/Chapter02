@@ -15,6 +15,7 @@ public class Tv {
 		this.volume = volume;
 		this.power = power;
 	}
+	
 	// 메소드-gs
 	public int getChannel() {
 		return this.channel;
@@ -31,11 +32,11 @@ public class Tv {
 	// 메소드-일반
 	public void setPower(boolean on) {
 		if(on == true) {
-			power = true;
+			this.power = true;
 			this.channel = 7;
 			this.volume = 20;
 		}else {
-			power = false;
+			this.power = false;
 			this.channel = 0;
 			this.volume = 0;
 		}
@@ -48,7 +49,7 @@ public class Tv {
 		}
 	}
 	public void setChannel(boolean up) {
-		if(up==true) {
+		if(up == true) {
 			this.channel = ++channel;
 		}else {
 			this.channel = --channel;
@@ -63,7 +64,7 @@ public class Tv {
 		}		
 	}
 	public void setVolume(boolean up) {
-		if(up==true) {
+		if(up == true) {
 			this.volume = ++volume;
 		}else {
 			this.volume = --volume;
