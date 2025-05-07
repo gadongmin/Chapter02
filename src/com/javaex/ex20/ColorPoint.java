@@ -29,14 +29,15 @@ public class ColorPoint extends Point {
 	// 메소드-일반
 	@Override
 	public String toString() {
-		return "ColorPoint [color=" + color + "]";
+		return "ColorPoint [color=" + color + ", getX()=" + getX() + ", getY()=" + getY() + "]";
 	}
 
 	public void showInfo() {
 		System.out.println("==========");
-		System.out.println("x=" + x);
-		System.out.println("y=" + y);
-		System.out.println("color=" + color);
+		System.out.println("x=" + super.x);
+		System.out.println("y=" + super.y);
+		System.out.println("color=" + this.color);
 		System.out.println("==========");
 	}
 }
+

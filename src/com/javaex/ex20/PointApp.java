@@ -7,9 +7,10 @@ public class PointApp {
 		System.out.println(p.toString());
 		
 		ColorPoint cp1 = new ColorPoint("red");
-		System.out.println(cp1.toString());
+		cp1.showInfo();
 		
 		ColorPoint cp2 = new ColorPoint(10, 10, "red");
+		System.out.println(cp2.toString());
 		cp2.showInfo();
 
 	}
