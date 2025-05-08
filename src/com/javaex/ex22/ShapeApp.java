@@ -22,6 +22,7 @@ public class ShapeApp {
 
 		// 하나의 배열에 모든 도형을 담는다, 다만 자식쪽 기능은 사용 불가
 		Shape[] sArr = new Shape[3];
+		sArr[0] = t01; // 업캐스팅(부모 클래스로 변환되는 것)
 		sArr[0] = st;
 		sArr[1] = sc;
 		sArr[2] = sr;
@@ -29,7 +30,10 @@ public class ShapeApp {
 		for (int i = 0; i < sArr.length; i++) {
 			sArr[i].draw();
 		}
-
+		// 다운캐스팅(자식의 기능을 사용할 수 있게 하는 장치)
+		System.out.println(((Triangle) sArr[0]).getWidth());
+		System.out.println(((Circle) sArr[1]).getRadius());
+		System.out.println(((Rectangle) sArr[2]).getWidth());
 	}
 
 }
